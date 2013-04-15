@@ -2,6 +2,10 @@ html, body, .h100p {
 	height: 100%;
 }
 
+.main-menu {
+	border-right: solid 1px #EEEEEE;
+}
+
 .map {
 	height: 100%;
 	width: 100%;

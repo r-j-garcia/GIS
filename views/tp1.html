@@ -1,3 +1,13 @@
-<div id="map_canvas" class="map" ui-map="map" ui-event="{'map-click': 'addMarker($event)'}" ui-options="mapOptions">
-
+<div class="row-fluid h100p">
+	<div class="span2">
+		<div class="row-fluid">
+			<h3 class="page-header">Menu</h3>
+		</div>
+		<div class="row-fluid">
+			<button ng-disabled="!markers.length" ng-click="resetMarkers()">Reiniciar</button>
+		</div>
+	</div>
+	<div class="span10 h100p">
+		<div id="map_canvas" class="map" ui-map="map" ui-event="{'map-click': 'addMarker($event)'}" ui-options="mapOptions"></div>
+	</div>
 </div>

@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
 	<link rel="stylesheet" type="text/css" href="css/angular-ui.min.css"/>
 	<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+	<script type="text/javascript" src="js/libs/jquery.min.js"></script>
 	<script type="text/javascript" src="js/libs/angular.min.js"></script>
 	<script type="text/javascript" src="js/libs/angular-ui.min.js"></script>
 	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUJi8VpKuY8zA7fJnCOXqnjka_5VqG5R8&sensor=false"></script>
@@ -16,7 +17,7 @@
 <body ng-controller="AppCtrl">
 	<div class="container-fluid h100p">
 		<div class="row-fluid h100p">
-			<div class="span2" ng-include="'views/menu.html'"></div>
+			<div class="span2 main-menu h100p" ng-include="'views/main-menu.html'"></div>
 			<div class="span10 h100p">
 				<div class="loading" ng-show="hasPendingRequests()"></div>
 				<div class="h100p" ng-hide="hasPendingRequests()" ng-view></div>
