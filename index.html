@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app='GIS'>
+<head>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' lang='es'/>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/angular-ui.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+	<script type="text/javascript" src="js/libs/angular.min.js"></script>
+	<script type="text/javascript" src="js/libs/angular-ui.min.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUJi8VpKuY8zA7fJnCOXqnjka_5VqG5R8&sensor=false"></script>
+	<script type="text/javascript" src="js/controllers/app.js"></script>
+	<script type="text/javascript" src="js/controllers/tp1.js"></script>
+	<script type="text/javascript" src="js/controllers/tp2.js"></script>
+</head>
+<body ng-controller="AppCtrl">
+	<div class="container-fluid h100p">
+		<div class="row-fluid h100p">
+			<div class="span2" ng-include="'views/menu.html'"></div>
+			<div class="span10 h100p">
+				<div class="loading" ng-show="hasPendingRequests()"></div>
+				<div class="h100p" ng-hide="hasPendingRequests()" ng-view></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
